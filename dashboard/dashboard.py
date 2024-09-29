@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 st.title("Dashboard Visualisasi Data - Ryan Hangralim")
 st.subheader("Top 10 kategori dengan penjualan tertinggi")
-category = pd.read_csv('top_10_category.csv')
+category = pd.read_csv('dashboard/top_10_category.csv')
 sorted_category = category.sort_values(by='count', ascending=False)
 
 # Create a horizontal bar chart
@@ -20,7 +20,7 @@ st.pyplot(plt)
 
 
 st.subheader("Perbandingan frekuensi metode pembayaran")
-payment = pd.read_csv('payment_counts.csv')
+payment = pd.read_csv('dashboard/payment_counts.csv')
 
 plt.figure(figsize=(8, 8))
 plt.pie(
